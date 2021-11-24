@@ -69,6 +69,7 @@ def getInternet():
 
 def main():
 #    with lock:
+    try:
         while 1:
             wallet = Wallet()
             prv = wallet.key.__dict__["mainnet"].__dict__["wif"]
